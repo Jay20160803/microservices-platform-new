@@ -8,7 +8,7 @@
     <artifactId>central-platform</artifactId>
     <version>5.6.0</version>
     <modules>
-        <module>jay-commons</module>
+        <module>andy-commons</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -421,7 +421,7 @@
 
     <developers>
         <developer>
-            <name>Jay Gao</name>
+            <name>Andy Gao</name>
             <email>472781184@qq.com</email>
             <organizationUrl>https://github.com/Jay20160803</organizationUrl>
         </developer>

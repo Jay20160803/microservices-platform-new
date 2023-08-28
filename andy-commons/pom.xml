@@ -15,6 +15,7 @@
     <modules>
         <module>andy-commons-core</module>
         <module>andy-log-spring-boot-starter</module>
+        <module>andy-common-spring-boot-starter</module>
     </modules>
 
 </project>

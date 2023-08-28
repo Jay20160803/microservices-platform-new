@@ -68,6 +68,7 @@
         <docker.java.opts>-Xms128m -Xmx128m</docker.java.opts>
         <guava.version>20.0</guava.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -87,18 +88,77 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
     </dependencies>
+
     <dependencyManagement>
         <dependencies>
+            <!-- 自定义 starter -->
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-common-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-db-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-log-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-redis-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-swagger2-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-loadbalancer-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-auth-client-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-sentinel-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-common-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zlt</groupId>
+                <artifactId>zlt-elasticsearch-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
@@ -382,6 +442,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -398,6 +459,15 @@
             </plugins>
         </pluginManagement>
     </build>
+    <repositories>
+        <repository>
+            <id>aliyun-repos</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <distributionManagement>
         <repository>
             <id>rdc-releases</id>

@@ -9,6 +9,10 @@
     <version>5.6.0</version>
     <modules>
         <module>andy-commons</module>
+        <module>andy-config</module>
+        <module>andy-gateway</module>
+        <module>andy-uaa</module>
+        <module>andy-business</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -105,58 +109,58 @@
         <dependencies>
             <!-- 自定义 starter -->
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-common-spring-boot-starter</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-common-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-db-spring-boot-starter</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-db-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-log-spring-boot-starter</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-log-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-redis-spring-boot-starter</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-redis-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-swagger2-spring-boot-starter</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-swagger2-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-loadbalancer-spring-boot-starter</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-loadbalancer-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-auth-client-spring-boot-starter</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-auth-client-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-sentinel-spring-boot-starter</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-sentinel-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-config</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-config</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-common-core</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-commons-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zlt</groupId>
-                <artifactId>zlt-elasticsearch-spring-boot-starter</artifactId>
+                <groupId>com.andy</groupId>
+                <artifactId>andy-elasticsearch-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

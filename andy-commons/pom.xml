@@ -16,6 +16,13 @@
         <module>andy-commons-core</module>
         <module>andy-log-spring-boot-starter</module>
         <module>andy-common-spring-boot-starter</module>
+        <module>andy-redis-spring-boot-starter</module>
+        <module>andy-sentinel-spring-boot-starter</module>
+        <module>andy-swagger2-spring-boot-starter</module>
+        <module>andy-loadbalancer-spring-boot-starter</module>
+        <module>andy-auth-client-spring-boot-starter</module>
+        <module>andy-db-spring-boot-starter</module>
+        <module>andy-elasticsearch-spring-boot-starter</module>
     </modules>
 
 </project>
